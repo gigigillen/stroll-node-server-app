@@ -4,7 +4,7 @@ import express from "express";
 import Hello from "./hello.js";
 import cors from "cors";
 import mongoose from "mongoose";
-import UserRoutes from "./Stroll/User/routes.js";
+import UserRoutes from "./Stroll/Users/routes.js";
 import LocationRoutes from "./Stroll/Location/routes.js";
 
 const CONNECTION_STRING = process.env.MONGO_CONNECTION_STRING || "mongodb://127.0.0.1:27017/stroll"

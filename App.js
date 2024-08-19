@@ -7,11 +7,12 @@ import mongoose from "mongoose";
 import UserRoutes from "./Stroll/Users/routes.js";
 import LocationRoutes from "./Stroll/Location/routes.js";
 
-const CONNECTION_STRING = process.env.MONGO_CONNECTION_STRING || "mongodb://127.0.0.1:27017/stroll"
+const CONNECTION_STRING = process.env.MONGO_CONNECTION_STRING || "mongodb://localhost:27017/stroll"
 mongoose.connect(CONNECTION_STRING);
 
 
 const app = express();
+
 app.use(
     cors({
         credentials: true,
